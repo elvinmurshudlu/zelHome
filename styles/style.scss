@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+
+.container{
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    nav{
+        font-size: 50px;
+    }
+    .loginRegister{
+        width: 500px;
+        min-height: 650px;
+        padding-bottom: 40px;
+        // background-color: red;
+    background-color: #f8f8f8;
+        border: 0.6px solid rgb(177, 176, 176);
+         border-radius: 10px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         row-gap: 30px;
+         &_select{
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 60px;
+            h4{
+                font-size: 17px;
+            }
+            .buttons{
+                width: 350px;
+                height: 50px;
+                display: flex;
+                justify-content: space-evenly;
+                background-color: #eeeeee;
+                border-radius: 10px;
+                align-items: center;
+                button{
+                    width: 49.5%;
+                    height: 96%;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    background-color: none;
+                    transition: 0.3s;
+                    border: 0;
+                cursor: pointer;
+                outline: 0;
+
+
+                }
+                .buttonFocused{
+                    background-color: white;
+                }
+            }
+         }
+         input{
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            padding: 5px 15px;
+            font-size: 15px;
+            border: 0;
+            background-color: #eeeeee;
+            transition: 0.5s;
+            
+        }
+        input:not([type=submit]):focus{
+            background-color: #fff;
+            outline: 0;
+        }
+         .login{
+            width: 350px;
+            height: 400px;
+            // background-color: red;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            
+            input[type=submit]{
+                background-color: #b6958b;
+                color: #eeeeee;
+                cursor: pointer;
+            }
+            input[type=submit]:hover{
+                background-color: #eeeeee;
+                color: #b6958b;
+            }
+
+            
+         }
+         .register{
+            width: 350px;
+            
+            // background-color: red;
+            display: flex;
+            // flex-direction: column;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            column-gap: 5px;
+            span{
+                width: 100%;
+            }
+            .nameSurName{
+                width: 49%;
+            }
+         }
+
+    }
+}
+
+
+.hidden{
+    display: none !important;
+}
+
+input[type=checkbox]{
+    width: 17px !important;
+}
+
+label{
+    color: red;
+}
+// label{
+    // display: inline-block;
+    // height: 10px;
+    
+    
+    // align-self: flex-start;
+    // justify-self: flex-start;
+// }

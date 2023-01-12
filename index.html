@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav>ZelHome</nav>
+        <div class="loginRegister">
+            <div class="loginRegister_select">
+                <h4><a href="https://selhome.az/az/">Qeydiyyatsız davam edin  --></a></h4>
+                <div class="buttons">
+                    <button id="loginBtn" class="buttonFocused" autofocus>Login</button>
+                    <button id="registerBtn">Register</button>
+                </div>
+            </div>
+            <form action="" class="login" >
+                <span><input type="text" class="email"  placeholder="Email ünvan" id="loginEmail"></br>
+                    <label for="loginEmail"></label></span>
+                
+                <span><input type="password"  placeholder="Şifrə" id="loginPasswd"></br>
+                    <label for="loginPasswd"></label>
+    </span>
+                
+                <input type="submit" value="Daxil ol">
+                <p><a href="">Şifrəmi unutdum</a></p>
+            </form>
+            <form class="register hidden">
+                <p>Email unvanı ilə daxil olun</p>
+                <span class="nameSurName"><input id="nameRegister" type="text" placeholder="Ad" ><br>
+                    <label for="nameRegister"></label></span>
+                <span class="nameSurName">
+                    <input id="surnameRegister" type="text" placeholder="Soyad" ><br>
+                    <label for="surnameRegister"></label></span>
+
+                <span><input id="emailRegister" type="text" class="email"  placeholder="Email ünvan" ><br>
+                    <label for="emailRegister"></label></span>
+
+                <span>
+                    <input id="passwdRegister" type="password"  placeholder="Şifrə"><br>
+                    <label for="passwdRegister"></label></span>
+
+                <span>
+                    <input id="repasswdRegister" type="password"  placeholder="Təkrar şifrə"><br>
+                    <label for="repasswdRegister"></label> </span>
+                <span><input type="checkbox" id="checkbox"><span class="terms">Kampaniyalardan xəbərdar olmaq üçün məlumat almaq istəyirik, Qaydalar və şərtlər Qaydalarla razıyam.</span></span>
+
+                <input  type="submit" value="Qeydiyyat">
+            </form>
+
+        </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+    <!-- <script src="./js/profile.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/accountStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hesab Məlumatları</h1>
+        <div class="accountDetails">
+            <div class="profile">
+                <form  class="profileSettings" onsubmit="return test">
+                    <span><label for="name">Ad</label><input type="text" placeholder="Ad" id="name" ></span>
+                <span><label for="surname">Soyad</label><input type="text" placeholder="Soyad" id="surname" ></span>
+                <span><label for="email">Email</label><input type="text" placeholder="Email" id="email" ></span>
+                <span><label for="telephone">Telefon Nomresi</label><input type="text" placeholder="+994 XX XXX XX XX" id="telephone" ></span>
+                <span><label for="birthday">Dogum tarixi</label><input type="date" placeholder="birthday" id="birthday" ></span>
+                
+                <span><p>Cins</p></span>
+                <span class="gender"><input type="checkbox" id="man"><label for="man">Kisi</label></span>
+                <span class="gender"><input type="checkbox" id="woman"><label for="woman">Qadin</label></span>
+                <input type="submit" id="changeInfo" value="Hesab melumatlarini yenileyin">
+                </form>
+
+
+            </div>
+            <div class="passwordReset">
+                <h4>Sifreni yenileyin</h4>
+                <form  class="changePasswd">
+                    <span><input type="password" id="oldPasswd" placeholder="Kohne kod"><label for="oldPasswd">Kohne</label></span>
+                    <span><input type="password" id="newPasswd" placeholder="Yeni kod"><label for="newPasswd">Yeni</label></span>
+                    <span><input type="password" id="confirmNewPasswd" placeholder="Yeniden yeni kod"><label for="confirmNewPasswd">Yeniden</label></span>
+                    <span><p id="infoNewPasswd"></p></span>
+                <span><input type="submit" id="changePasswd" value="Change password"></span>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/profile.js"></script>
+</body>
+</html>
